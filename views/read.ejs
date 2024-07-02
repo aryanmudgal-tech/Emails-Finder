@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="/read.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h1>Contact Information</h1>
+        <div class="info">
+            <% if(full_name===null){%>
+                <p><strong>Full Name:</strong>Not Found</p>
+            <% }else{%>
+            <p><strong>Full Name:</strong> <%= full_name %> </p>
+            <% } %>
+            
+            <% if(email===null){%>
+                <p><strong>Email:</strong>Not Found</p>
+            <% }else{%>
+            <p><strong>Email:</strong> <%= email %> </p>
+            <% } %>
+
+            <% if(twitter===null){%>
+                <p><strong>Twitter:</strong>Not Found</p>
+            <% }else{%>
+            <p><strong>Twitter:</strong> <%= twitter %> </p>
+            <% } %>
+
+            <% if(linkedin===null){%>
+                <p><strong>LinkedIn:</strong>Not Found</p>
+            <% }else{%>
+            <p><strong>LinkedIn:</strong> <%= linkedin %> </p>
+            <% } %>
+
+            </div>
+            <form action= "/" method="post">
+                <button type="submit" value="submit" >Back</button>
+            </form>        
+    </div>
+
+</body>
+</html>
