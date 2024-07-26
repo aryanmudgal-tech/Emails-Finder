@@ -16,7 +16,7 @@ const saltRounds=5;
 env.config();
 
 app.use(session({
-    secret: "topsecret",
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized:true
 }))
